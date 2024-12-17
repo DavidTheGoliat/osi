@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  banknote-tracker:
+    build: .
+    container_name: banknote_tracker
+    devices:
+      - /dev/video0:/dev/video0  # Share webcam
+    volumes:
+      - ./db.sqlite:/app/db.sqlite  # Persist SQLite database
+    environment:
+      - DISPLAY=$DISPLAY
+    ports:
+      - "5000:5000"  # Optional if you add web capabilities later
+    privileged: true  # Allow webcam access
