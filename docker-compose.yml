@@ -8,6 +8,7 @@ services:
       - /dev/video0:/dev/video0  # Share webcam
     volumes:
       - ./db.sqlite:/app/db.sqlite  # Persist SQLite database
+      - ./maps:/app/maps  # Persist map images
     environment:
       - DISPLAY=$DISPLAY
     ports:
