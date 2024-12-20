@@ -4,13 +4,16 @@ services:
   banknote-tracker:
     build: .
     container_name: banknote_tracker
+    # Enable interactive mode and terminal
+    stdin_open: true
+    tty: true
     devices:
       - /dev/video0:/dev/video0  # Share webcam
     volumes:
       - ./db.sqlite:/app/db.sqlite  # Persist SQLite database
-      - ./maps:/app/maps  # Persist map images
+      - ./maps:/app/maps  # Store generated maps
     environment:
       - DISPLAY=$DISPLAY
     ports:
-      - "5000:5000"  # Optional if you add web capabilities later
+      - "8000:8000"  # Optional if you add web capabilities later
     privileged: true  # Allow webcam access

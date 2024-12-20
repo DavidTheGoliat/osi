@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5192d8e702d3ea213bc899df08094b3b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5192d8e702d3ea213bc899df08094b3b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5192d8e702d3ea213bc899df08094b3b = L.map(
+                "map_5192d8e702d3ea213bc899df08094b3b",
+                {
+                    center: [47.07313333333334, 7.3538],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03bd0ceff4e7807a5a70007a0345f7b1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_03bd0ceff4e7807a5a70007a0345f7b1.addTo(map_5192d8e702d3ea213bc899df08094b3b);
+        
+    
+            var marker_0e0c41fb6c5327ed9fbcb55af2d9907a = L.marker(
+                [47.4554, 8.3296],
+                {
+}
+            ).addTo(map_5192d8e702d3ea213bc899df08094b3b);
+        
+    
+            var icon_91e05a5b4e664425bdb1c0a0693b268d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0e0c41fb6c5327ed9fbcb55af2d9907a.setIcon(icon_91e05a5b4e664425bdb1c0a0693b268d);
+        
+    
+        var popup_a60b450b11fa136a302a920b28809a34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8eba29c835db11bb5f73b1dd25e7575 = $(`<div id="html_c8eba29c835db11bb5f73b1dd25e7575" style="width: 100.0%; height: 100.0%;">Stop 1: Neuenhof, Switzerland (Current)</div>`)[0];
+                popup_a60b450b11fa136a302a920b28809a34.setContent(html_c8eba29c835db11bb5f73b1dd25e7575);
+            
+        
+
+        marker_0e0c41fb6c5327ed9fbcb55af2d9907a.bindPopup(popup_a60b450b11fa136a302a920b28809a34)
+        ;
+
+        
+    
+    
+            var marker_4b3f01e9960d0188dd93174bcc44f05f = L.marker(
+                [46.2044, 6.1432],
+                {
+}
+            ).addTo(map_5192d8e702d3ea213bc899df08094b3b);
+        
+    
+            var icon_207456ac0c3f79c6f4fa31a6cf4411cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4b3f01e9960d0188dd93174bcc44f05f.setIcon(icon_207456ac0c3f79c6f4fa31a6cf4411cd);
+        
+    
+        var popup_8881b47098d71207a6f914247db202fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7feb31d44edcb7a110f7ff8e824dfe9c = $(`<div id="html_7feb31d44edcb7a110f7ff8e824dfe9c" style="width: 100.0%; height: 100.0%;">Stop 2: 46.2044,6.1432, Geneva, Switzerland</div>`)[0];
+                popup_8881b47098d71207a6f914247db202fe.setContent(html_7feb31d44edcb7a110f7ff8e824dfe9c);
+            
+        
+
+        marker_4b3f01e9960d0188dd93174bcc44f05f.bindPopup(popup_8881b47098d71207a6f914247db202fe)
+        ;
+
+        
+    
+    
+            var marker_93a164ff886db8d01f39d2bebe7ab5ee = L.marker(
+                [47.5596, 7.5886],
+                {
+}
+            ).addTo(map_5192d8e702d3ea213bc899df08094b3b);
+        
+    
+            var icon_aa2567592e13d879dc744d18ed06dc91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_93a164ff886db8d01f39d2bebe7ab5ee.setIcon(icon_aa2567592e13d879dc744d18ed06dc91);
+        
+    
+        var popup_5de69d791d81a9e4dd3145b79c50385b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04fceb0563f1a9d301216a7bbae29dc1 = $(`<div id="html_04fceb0563f1a9d301216a7bbae29dc1" style="width: 100.0%; height: 100.0%;">Stop 3: 47.5596,7.5886, Basel, Switzerland</div>`)[0];
+                popup_5de69d791d81a9e4dd3145b79c50385b.setContent(html_04fceb0563f1a9d301216a7bbae29dc1);
+            
+        
+
+        marker_93a164ff886db8d01f39d2bebe7ab5ee.bindPopup(popup_5de69d791d81a9e4dd3145b79c50385b)
+        ;
+
+        
+    
+    
+            var poly_line_39c7a60458c525e514b1450f70954504 = L.polyline(
+                [[47.4554, 8.3296], [46.2044, 6.1432], [47.5596, 7.5886]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5192d8e702d3ea213bc899df08094b3b);
+        
+</script>
+</html>
